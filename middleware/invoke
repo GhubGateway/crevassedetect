@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#
+# jupyter tool
+#
+/usr/bin/invoke_app "$@" -t crevassedetect \
+                         -C "start_jupyter -T @tool -t crevassedetect.ipynb" \
+                         -u anaconda-7 \
+                         -r none \
+                         -w headless
